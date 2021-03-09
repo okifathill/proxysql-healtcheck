@@ -57,6 +57,6 @@ func sqlQuery(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	fmt.Printf("Starting server at port 8080\n")
-    http.HandleFunc("/healtcheck", sqlQuery)
+    http.HandleFunc("/healthcheck", sqlQuery)
     http.ListenAndServe(":8080", nil)
 }

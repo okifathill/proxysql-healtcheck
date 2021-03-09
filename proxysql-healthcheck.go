@@ -41,7 +41,7 @@ func sqlQuery(w http.ResponseWriter, r *http.Request) {
 	
 	if err != nil {
 		fmt.Println(err.Error())
-		fmt.Fprintf(w, "You have an error in your SQL syntax\n")
+		fmt.Fprintf(w, "You have an error ProxySql\n")
 		return
 	}
 	defer rows.Close()
